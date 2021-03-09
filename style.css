@@ -24,46 +24,72 @@ h1 {
 }
 
 p {
-  font-size: 25px;
+  font-size: 1.4vw;
 }
 
 .mainBox {
   display: flex;
-  height: 32vw;
+  height: 28vw;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .twoColumnBox {
-  margin: auto;
+  margin-left: 36vw;
   display: flex;
   width: 35vw;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .columnBox {
   flex-direction: column;
-}
-
-.columnBox .textBox > h1 {
-  width: 65vh;
-  margin-top: 10px;
-  margin-bottom: 15px;
+  justify-content: space-evenly;
 }
 
 .columnBox .textBox > p {
-  width: 20vh;
+  width: 24vw;
 }
 
 .textBox {
+  display: flex;
   width: 100%;
 }
 
-.image {
-  display: block;
-  width: 150px;
-  height: 150px;
+.imageBox {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 0px;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.imageTop {
+  display: flex;
+  width: 12vw;
+  height: 15vw;
+  padding: 0px;
+  margin: 0px;
   background-size: cover;
   background-position: center;
+  
+  position: absolute;
+  top: 19%;
+  left: 35%;
+}
+
+.imageBottom {
+  display: flex;
+  width: 13vw;
+  height: 12vw;
+  padding: 0px;
+  margin: 0px;
+  background-size: cover;
+  background-position: center;
+  
+  position: absolute;
+  top: 63%;
+  left: 44%;
 }
